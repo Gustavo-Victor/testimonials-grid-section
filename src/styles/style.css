@@ -1,0 +1,202 @@
+/*variables*/
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --grayish-blue: hsl(217, 19%, 35%);
+    --blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --default-font: "Barlow Semi Condensed", sans-serif;
+}
+
+/*reset*/
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-family: var(--default-font);
+    padding: 2rem 0;
+}
+
+/*main*/
+.testimonials {
+    width: 90vw;
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+}
+
+/*testimonial*/
+.testimonial {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    color: var(--light-gray);
+}
+
+.testimonial h4, .testimonial .highlight { 
+    color: var(--white);
+}
+
+.testimonial .person {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.testimonial .person .align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+
+.testimonial .person .photo {
+    border-radius: 50%;
+    width: 32px;
+    height: auto;
+    border: 2px solid transparent;
+}
+
+.testimonial .person .name {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.testimonial .person .situation {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/*testimonial highlight and quote*/
+.testimonial .highlight {
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.testimonial .quote {
+    font-size: 1.1em;
+}
+
+/*testimonial.light*/
+.testimonial.light {
+    background-color: var(--white); 
+    color: var(--grayish-blue);
+}
+
+.testimonial.light h4, .testimonial.light .highlight {
+    color: var(--blackish-blue);
+}
+
+
+/*each testimonial*/
+/*first*/
+#first {
+    background-color: var(--moderate-violet);        
+}
+
+#first .person .photo, #fourth .person .photo {
+    border: 2px solid hsl(263, 55%, 65%);
+}
+
+/*second*/
+#second {
+    background-color: var(--grayish-blue);
+}
+
+/*third*/
+#third {
+    background-color: var(--white);
+}
+
+/*fourth*/
+#fourth {
+    background-color: var(--blackish-blue);
+}
+
+/*fifth*/
+#fifth {
+    background-color: var(--white);
+}
+
+
+/*footer attribution*/
+.attribution { 
+    margin-top: 2.5rem;
+    font-size: 1.1em;
+    text-align: center;
+    color: var(--blackish-blue); 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: var(--grayish-blue);
+    transition: all 0.2s ease;
+}
+
+.attribution a:hover, a:active {
+    color: vaR(--moderate-violet);
+}
+
+
+/*media queries*/
+@media only screen and (min-width: 1024px) {
+    /*testimonials*/
+    .testimonials {
+        width: 90vw;
+        max-width: 1000px;
+        gap: 1.2rem;
+        grid-template-areas: 
+        "first first second fifth"
+        "third fourth fourth fifth";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, minmax(270px, calc(100vh -4rem / 2)));
+    }
+
+    /*each testimonial*/
+    /*first*/
+    #first {
+        grid-area: first;    
+    }
+
+    /*second*/
+    #second {
+        grid-area: second;
+    }
+
+    /*third*/
+    #third {
+        grid-area: third;
+    }
+
+    /*fourth*/
+    #fourth {
+        grid-area: fourth; 
+    }
+
+    /*fifth*/
+    #fifth {
+        grid-area: fifth;
+        /* grid-template-rows: 1/3; */
+    }
+
+    
+}
