@@ -1,6 +1,6 @@
 # Frontend Mentor - Testimonials Grid Section
 
-Este projeto é uma solução do desafio [Testimonials grid section](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) do Frontend mentor que é  uma plataforma de desafios que te ajuda a melhorar suas habilidades de codificação e desenvolviemnto através da construção de projetos reais. 
+Este projeto é uma solução do desafio [Testimonials grid section](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7) do Frontend mentor que é  uma plataforma de desafios que te ajuda a melhorar suas habilidades de codificação e desenvolviemnto através da construção de projetos reais. 
 
 Projeto concluído ✅
 
