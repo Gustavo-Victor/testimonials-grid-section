@@ -3,7 +3,7 @@
 Este projeto é uma solução do desafio [Testimonials grid section](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) do Frontend mentor que é  uma plataforma de desafios que te ajuda a melhorar suas habilidades de codificação e desenvolviemnto através da construção de projetos reais. 
 
 Projeto concluído ✅
- 
+
 
 ## Tabela de conteúdos
 
@@ -72,7 +72,7 @@ No projeto, os usuários são capazes de:
 
 ## 📋Licença
 
-Este projeto está sob a licença [MIT](./LICENSE.md) 
+Este projeto está sob a licença [MIT](./LICENSE) 
 
 Qualquer pessoa pode usar e contribuir com este projeto ✌
 
